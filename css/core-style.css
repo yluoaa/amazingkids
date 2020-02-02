@@ -852,10 +852,10 @@ img {
       position: relative;
       z-index: 1; }
       .main-content-wrapper .single-product-area .single_product_desc .product-meta-data .line {
-        width: 80px;
+        width: 90px;
         height: 3px;
         background-color: #fbb710;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         display: block; }
       .main-content-wrapper .single-product-area .single_product_desc .product-meta-data .product-price {
         font-size: 24px;
