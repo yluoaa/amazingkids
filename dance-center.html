@@ -89,14 +89,45 @@
         <!-- Product Details Area Start -->
         <div class="single-product-area section-padding-50 clearfix">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <img src="img/bg-img/ballet.jpg" alt="">
-                    </div>
-                    <div class="col-12 col-lg-6">
-                       <img src="img/bg-img/ballet-kid.jpg" alt="">
-                    </div>
-                </div>
+			<div class="w3-bar w3-black">
+              <button id="ballet1" class="w3-bar-item w3-button" onclick="openTab('ballet')">Ballet</button>
+              <button id="yoga1" class="w3-bar-item w3-button" onclick="openTab('yoga')">Yoga</button>
+              <button id="kpop1" class="w3-bar-item w3-button" onclick="openTab('kpop')">Kpop</button>
+              <button id="jazz1" class="w3-bar-item w3-button" onclick="openTab('jazz')">Jazzfunk</button>
+            </div>
+					<div id="ballet" style="display:display" class="w3-container dance">
+						 <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <img src="img/bg-img/ballet.jpg" alt="">
+                            </div>
+                            <div class="col-12 col-lg-6">
+                               <img src="img/bg-img/ballet-kid.jpg" alt="">
+                            </div>
+						  </div>
+					</div>
+					<div id="yoga" style="display:none" class="w3-container dance">
+						 <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <br><img src="img/bg-img/yoga.jpg" alt="">
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <br><h4>Yoga 瑜伽 </h4>
+								<p>導師 Mon 自2007年起為全職瑜伽導師，1000小時以上相關訓練，及美國瑜伽聯盟師資認證。
+								着重以趣味方式，按步就班教學，課堂充滿鼓勵及正能量。<br>
+								*哈達瑜伽* 透過瑜伽式子練習，鍛鍊身體，均衡力量及柔軟度，調和呼吸，潔淨排毒，增强免疫力，
+								緩解壓力，平靜心靈。
+								</p>
+								<p> 課堂時間：星期二 19:00-20:00 和 20:15-21:15 </p>
+								<p> 報名請 whatsapp 68025807。 <a class="contact-font" href="contact-us.html">Contact us</a></p>
+                            </div>
+						  </div>
+					</div>
+					<div id="kpop" style="display:none" class="w3-container dance">
+						 kpop
+					</div>
+					<div id="jazz" style="display:none" class="w3-container dance">
+						 Jazzfunk
+					</div>
             </div>
         </div>
         <!-- Product Details Area End -->
@@ -126,7 +157,23 @@
     <script src="js/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
-
+<script>
+function openTab(name) {
+  var i;
+  var x = document.getElementsByClassName("dance");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(name).style.display = "block";  
+ 
+  var j;
+  var y = document.getElementsByClassName("w3-button");
+  for (j = 0; j < y.length; j++) {
+	y[j].style.backgroundColor = "#707070";
+  }
+  document.getElementById(name+"1").style.backgroundColor = "#ffa366";  
+}
+</script>
 </body>
 
 </html>
