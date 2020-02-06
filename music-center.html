@@ -89,14 +89,45 @@
         <!-- Product Details Area Start -->
         <div class="single-product-area section-padding-50 clearfix">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <img src="img/bg-img/4.jpg" alt="">
-                    </div>
-                    <div class="col-12 col-lg-6">
-                     	<img src="img/bg-img/piano-kid.jpg" alt="">
-                    </div>
-                </div>
+			<div class="w3-bar w3-black">
+              <button id="harp1" class="w3-bar-item w3-button" onclick="openTab('harp')">Harp</button>
+              <button id="piano1" class="w3-bar-item w3-button" onclick="openTab('piano')">Piano</button>
+              <button id="ukulele1" class="w3-bar-item w3-button" onclick="openTab('ukulele')">Ukulele DIY</button>
+              <button id="playgroup1" class="w3-bar-item w3-button" onclick="openTab('playgroup')">Playgroup</button>
+            </div>
+				  <div id="harp" style="display:display" class="w3-container music">
+						 <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <img src="img/bg-img/4.jpg" alt="">
+                            </div>
+                            <div class="col-12 col-lg-6">
+                            </div>
+						  </div>
+				  </div>
+				  <div id="piano" style="display:display" class="w3-container music">
+						 <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <img src="img/bg-img/piano-kid.jpg" alt="">
+                            </div>
+                            <div class="col-12 col-lg-6">
+                            </div>
+						  </div>
+				  </div>
+                  <div id="ukulele" style="display:display" class="w3-container music">
+						 <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <img src="img/bg-img/6.jpg" alt="">
+                            </div>
+                            <div class="col-12 col-lg-6">
+                            </div>
+						  </div>
+				  </div>
+				  <div id="playgroup" style="display:display" class="w3-container music">
+						 <div class="row">
+              			 	  <img src="img/bg-img/playgroup1.jpg" alt="">
+							  <img src="img/bg-img/playgroup2.jpg" alt="">                          
+						 </div>
+				  </div>
             </div>
         </div>
         <!-- Product Details Area End -->
@@ -126,7 +157,23 @@
     <script src="js/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
-
+<script>
+function openTab(name) {
+  var i;
+  var x = document.getElementsByClassName("music");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(name).style.display = "block";  
+ 
+  var j;
+  var y = document.getElementsByClassName("w3-button");
+  for (j = 0; j < y.length; j++) {
+	y[j].style.backgroundColor = "#707070";
+  }
+  document.getElementById(name+"1").style.backgroundColor = "#ffa366";  
+}
+</script>
 </body>
 
 </html>
