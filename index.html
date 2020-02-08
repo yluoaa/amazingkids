@@ -111,7 +111,7 @@
                         <div class="hover-content">
                             <div class="line"></div>
                             <p>Dance Courses for Adult/Kids</p>
-                            <h5>Ballet/Kpop/Jazz/Yoga</h5>
+                            <h6>Ballet/Kpop/Jazz/Yoga</h6>
                         </div>
                     </a>
                 </div>
@@ -144,6 +144,18 @@
                 <!-- Single Catagory -->
                 <div class="single-products-catagory clearfix">
                     <a href="shop.html">
+                        <img src="img/bg-img/6.jpg" alt="">
+                        <!-- Hover Content -->
+                        <div class="hover-content">
+						    <p>Ukulele DIY Kit</p>
+                            <div class="line"></div>
+                        </div>
+                    </a>
+                </div>
+				
+				<!-- Single Catagory -->
+                <div class="single-products-catagory clearfix">
+                    <a href="shop.html">
                         <img src="img/bg-img/5.jpg" alt="">
                         <!-- Hover Content -->
                         <div class="hover-content">
@@ -153,18 +165,31 @@
                     </a>
                 </div>
 
-                <!-- Single Catagory -->
+				 <!-- Single Catagory -->
                 <div class="single-products-catagory clearfix">
                     <a href="shop.html">
-                        <img src="img/bg-img/6.jpg" alt="">
+                        <img src="img/bg-img/9.jpg" alt="">
                         <!-- Hover Content -->
                         <div class="hover-content">
-						    <p>Ukulele DIY Kit</p>
+						    <p>Music Stand</p>
                             <div class="line"></div>
                         </div>
                     </a>
                 </div>
-
+				
+                <!-- Single Catagory -->
+                <div class="single-products-catagory clearfix">
+                    <a href="shop.html">
+                        <img src="img/bg-img/8.jpg" alt="">
+                        <!-- Hover Content -->
+                        <div class="hover-content">
+						    <p>String Bows</p>
+                            <div class="line"></div>
+                        </div>
+                    </a>
+                </div>
+					  
+			    
                 <!-- Single Catagory -->
                 <div class="single-products-catagory clearfix">
                     <a href="shop.html">
@@ -177,29 +202,7 @@
                     </a>
                 </div>
 
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.html">
-                        <img src="img/bg-img/8.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-						    <p>String Bows</p>
-                            <div class="line"></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.html">
-                        <img src="img/bg-img/9.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-						    <p>Music Stand</p>
-                            <div class="line"></div>
-                        </div>
-                    </a>
-                </div>
+               
             </div>
         </div>
         <!-- Product Catagories Area End -->
@@ -215,6 +218,9 @@
 						<p class="contact-us">Phone/WhatsApp: +852-68025807 <br> WeChat: 591068467 <br> Email: luoyanjinlauren@gmail.com </p>
 						<p class="contact-us">Address: Unit 809, 8/F, New Kowloon Plaza, 38 Tai Kok Tsui Road, Kowloon, Hong Kong</p>
                         <p class="copywrite">All rights reserved by Amazing Kids Group Limited </p>
+						<span class="copywrite">
+                            Total visitor for this website: <span id="result1"></span>
+                        </span>
                     </div>
                 </div>
          </div>
@@ -231,6 +237,18 @@
     <script src="js/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+
+
+<script>
+  if (localStorage.pagecount){
+  	localStorage.pagecount=Number(localStorage.pagecount)+1;
+  }
+  else{
+  	localStorage.pagecount=1;
+  }
+  document.getElementById("result1").innerHTML=localStorage.pagecount;
+
+</script>
 
 </body>
 
