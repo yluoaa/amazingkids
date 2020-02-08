@@ -22,13 +22,14 @@
     }
     
     .logo-resize {
-     height: 90px;
-     width: 85px;
-     padding-top: 0;
+     height: 70px;
+     width: 62px;
+     padding-top: 3px;
     }
     
     .contact-us {
-     color: #FFFFFF
+     color: #FFFFFF;
+     font-size: 12px; 
     }
     
     .contact-font {
