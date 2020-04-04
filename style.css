@@ -91,3 +91,41 @@
 .dance-content {
   font-size: 14px;
 }
+
+/* slide show container*/
+.slideshow-container{
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the image by default */
+.product-img-slide{
+  display: none;
+}
+
+.prev, .next{
+  top: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  color: white !important; 
+  font-size: 32px;
+}
+
+.next{
+  position: absolute;
+  right: 0; 
+}
+
+.prev{
+  position: absolute;
+  left: 0;
+}
+
+.numbertext{
+  position: absolute;
+  left: 50%;
+  top: : 0
+  font-weight: bold;
+  color: white; 
+  font-size: 32px;
+}
