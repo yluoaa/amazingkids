@@ -104,28 +104,28 @@
 }
 
 .prev, .next{
-  top: 50%;
-  cursor: pointer;
-  font-weight: bold;
+  top: 50% !important;
+  cursor: pointer !important;
+  font-weight: bold !important;
   color: white !important; 
   font-size: 32px;
 }
 
 .next{
-  position: absolute;
-  right: 0; 
+  position: absolute !important;
+  right: 0 !important; 
 }
 
 .prev{
-  position: absolute;
-  left: 0;
+  position: absolute !important;
+  left: 0 !important;
 }
 
 .numbertext{
-  position: absolute;
-  left: 50%;
-  top: : 0
-  font-weight: bold;
-  color: white; 
-  font-size: 32px;
+  position: absolute !important;
+  left: 50% !important;
+  top:  0 !important;
+  font-weight: bold !important;
+  color: white !important; 
+  font-size: 32px !important;
 }
