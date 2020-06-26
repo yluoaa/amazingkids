@@ -136,3 +136,9 @@
   color: white !important; 
   font-size: 20px !important;
 }
+
+.main-color {
+    background-color: #ffb380;
+	font-weight: bold !important;
+	text-align: center !important;
+}
