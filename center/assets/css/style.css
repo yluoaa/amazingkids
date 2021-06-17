@@ -1102,20 +1102,20 @@ list-style: none;
 .detail-tab-h {background: #f7f7f7; display: flex; border-bottom: solid 1px #bababa; padding: 0 20px;}
 .detail-tab-i {padding: 20px 15px; cursor: pointer;}
 .detail-tab-i.active {color: #005293;}
-.detail-tab-c {padding: 30px 50px; color: #666; line-height: 1.8em;}
+.detail-tab-c {padding: 30px 30px; color: #666; line-height: 1.8em;}
 .detail-tab-c-i{display: none;}
 .detail-tab-c-i.active{display: block;}
 
 .detail-tab-c, .detail-tab-h, .txt-main-intro-c, .breadcrumb, .main-intro-subtit, .main-intro-loc{font-size: 14px;}
 .txt-main-intro-t, .main-intro-tit{font-size: 24px;}
 .main-intro-tit a{font-size: 18px;}
-.txt-main-intro{margin: 80px auto;}
+.txt-main-intro{margin: 20px auto;}
 
 @media (min-width: 1000px) {
   .detail-tab-c, .detail-tab-h, .txt-main-intro-c, .breadcrumb, .main-intro-subtit, .main-intro-loc{font-size: 14px;}
   .txt-main-intro-t, .main-intro-tit{font-size: 24px;}
   .main-intro-tit a{font-size: 18px;}
-  .txt-main-intro{margin: 80px auto;}
+  .txt-main-intro{margin: 40px auto;}
 }
 
 @media (min-width: 1280px) {
@@ -1138,14 +1138,14 @@ list-style: none;
   .detail-tab-c, .detail-tab-h, .txt-main-intro-c, .breadcrumb, .main-intro-subtit, .main-intro-loc{font-size: 20px;}
   .txt-main-intro-t, .main-intro-tit{font-size: 36px;}
   .main-intro-tit a{font-size: 24px;}
-  .txt-main-intro{margin: 150px auto;}
+  .txt-main-intro{margin: 100px auto;}
 }
 
 .con1{position: relative;margin-top: -4%;z-index: 2;}
-.con1 ul{width: 1150px;padding: 30px 20px;background: #fff;margin: 0 auto;text-align: center;border-radius: 15px;box-shadow: 0 0 30px rgba(108,108,108,.6);}
+.con1 ul{width: 1150px;padding: 20px 20px;background: #fff;margin: 0 auto;text-align: center;border-radius: 15px;box-shadow: 0 0 30px rgba(108,108,108,.6);}
 .con1 li{
 	display: inline-block;
-	width: 170px;
+	width: 180px;
 	padding: 10px;
 	border-right: 1px solid #949494;
 	vertical-align: top;
@@ -1168,7 +1168,7 @@ list-style: none;
 
 
 .con2{
-	padding: 3% 0;
+	padding: 0;
 }
 .con2 .con_l,.con2 .con_r{
 	display: inline-block;
