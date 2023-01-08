@@ -20,6 +20,12 @@
     <link rel="stylesheet" href="css/core-style.css">
     <link rel="stylesheet" href="style.css">
 
+	<script type="text/javascript">
+	function loadSlide() {
+		currentSlide(1);
+	}
+	window.onload = loadSlide;
+	</script>
 </head>
 
 <!-- Global site tag (gtag.js) - Google Ads: 10924190532 -->
@@ -31,7 +37,38 @@
 
   gtag('config', 'AW-10924190532');
 </script>
+<script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
 
+	// Next/previous controls
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	// Thumbnail image controls
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("demo");
+	  let captionText = document.getElementById("caption");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " active";
+	  captionText.innerHTML = dots[slideIndex-1].alt;
+	}
+</script>
 
 <body>
     <!-- Search Wrapper Area Start -->
@@ -116,63 +153,144 @@
               <button id="jazz1" class="w3-bar-item w3-button" onclick="window.location.href = 'dance-center-jazz.html';">Jazz</button>
             </div>
 					<div id="ballet" style="display:display" class="w3-container dance">
+						<div class="row">
+							<div class="col-12 col-lg-12">
+							<br><h4 style="text-align: center;">『認識：IDS真正專業導師團隊』</h4>
+							<p class="dance-content" style="text-align: center;">
+								所有導師均畢業於香港演藝學院，並具備正規芭蕾舞訓練背景。
+								導師們在修學的四年期間，除了參與各式的大型舞台表演外，
+								還修讀了如解剖學、舞蹈教育、舞蹈歷史、編舞等課堂。
+								部分導師更曾是外地職業芭蕾舞團的舞者，芭蕾舞技巧毋庸置疑。
+								我們相信導師的背景與教育質素有密切的關係，
+								因此聘請多位專業出身、舞蹈技巧高超的芭蕾舞導師，
+								為每位學生帶來優質的教育體驗。</p>
+							<h6 style="text-align: center;">* 專業導師專業資格 *</h6>
+							<p class="dance-content" style="text-align: center;">
+									- 香港演藝學院芭蕾舞系畢業，主修舞蹈教育 -<br>
+									- 英國皇家舞蹈學院註冊教師 -<br>
+									- 曾於職業芭蕾舞團任職舞者 -<br>
+									- 多年教學經驗，專業教導幼童至成人 - <br>
+									- Progressing Ballet Technique 證書 -							  
+							</p>
+							</div>
+						 </div>		
+						  
 						 <div class="row">
-                            <div class="col-12 col-lg-6">
-                                <br><iframe width="400" height="230" src="https://www.youtube.com/embed/Ci2cCxxVvLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								<br><p class="dance-content">
-								課堂時間（*需提前24小時預約/取消*）: <br>
-								Ballet: Mon 19:30-20:45 Wed 19:30-20:45 <br>
-								Stretching: Mon 18:45-19:30 Sat 17:00-17:45
-								<br>學費： 單堂：$220; 八堂：$1600（有效期兩個月）<br>
-								<br>地址: 大角咀新九龍廣場8樓809室 
-								<a class="contact-font" href="contact-us.html">地圖/Map</a><br>
-								報名請 whatsapp 68025807 
-								<a class="contact-font" href="contact-us.html">Contact us</a></p>
-                            </div>
-                            <div class="col-12 col-lg-6">
-								<br><h4>Adult Ballet Class 成人芭蕾課 </h4>
-								<p class="dance-content"> 練芭蕾的女人也許不是最美麗，但卻擋不住一種優雅、由內而外的魅力。通過芭蕾舞基本功的訓練，能夠糾正不良形體，無論站姿還是坐姿，都能使女生保持挺拔。
-								<br><br>我們的成人芭蕾課歡迎任何年齡的零基礎學生來參加，一起鍛煉形體，健美身材，提升氣質。
-								<br><br> Ms. Gigi 簡介 <br>
-										- 香港演藝學院芭蕾舞系畢業，主修舞蹈教育<br>
-										- 曾於職業芭蕾舞團任職舞者<br>
-										- 參與多項大型表演及比賽<br>
-										- 多年教學經驗，專業教導幼童至成人<br>
-										- 已獲《進階芭蕾技巧PBT證書》
-							    </p>
-                            </div>
-						  </div>
-						  
-						  <div class="row">
-                            <div class="col-12 col-lg-6">
-                                <img src="img/bg-img/balletkidsnew.jpg" alt="Kids Ballet Class">
-                            </div>
-                            <div class="col-12 col-lg-6">
-								<h4>Kids Ballet Class 幼兒芭蕾課 </h4>
-								<p class="dance-content"><br> 
-								課程專為幼童而設, 通過有趣方式教導芭蕾舞技巧, 
-								更能培養音樂感、鍛鍊儀態、訓練大小肌肉。<br>
-								完成課程後可銜接英國皇家芭蕾舞考試課程。
-								<br><br> Ms. Gigi 簡介 <br>
-										- 香港演藝學院芭蕾舞系畢業，主修舞蹈教育<br>
-										- 曾於職業芭蕾舞團任職舞者<br>
-										- 參與多項大型表演及比賽<br>
-										- 多年教學經驗，專業教導幼童至成人<br>
-										- 已獲《進階芭蕾技巧PBT證書》
-							    <br><br>
-								課堂日期：<br>
-								2.5-4歲：Wed 17:00-17:45 ；Sat 12:15-13:00 & 16:15-17:00 <br>
-								5-7歲：Sat 15:30-16:15
-								<br> *自組班/其他年齡段請查詢
+						
+                            <div class="col-12 col-lg-5">
 								<br><br>
-								學費： 4堂：$640 (2.5-4歲) ; $720（5-7歲）
-								<br><br>地址: 大角咀新九龍廣場8樓809室 
+								<!-- Container for the image gallery -->
+								<div class="container">
+								  <!-- Full-width images with number text -->
+								  <div class="mySlides">
+									<div class="numbertext">1 / 6</div>
+									  <img src="img/product-img/ballet4.jpg" style="width:100%" class="center">
+								  </div>
+
+								  <div class="mySlides">
+									<div class="numbertext">2 / 6</div>
+									  <img src="img/product-img/ballet5.jpg" style="width:100%" class="center">
+								  </div>
+
+								  <div class="mySlides">
+									<div class="numbertext">3 / 6</div>
+									  <img src="img/product-img/ballet6.jpg" style="width:100%" class="center">
+								  </div>
+
+								  <div class="mySlides">
+									<div class="numbertext">4 / 6</div>
+									  <img src="img/product-img/ballet7.jpg" style="width:90%" class="center">
+								  </div>
+
+								  <div class="mySlides">
+									<div class="numbertext">5 / 6</div>
+									  <img src="img/product-img/ballet1.jpg" style="width:100%" class="center">
+								  </div>
+
+								  <div class="mySlides">
+									<div class="numbertext">6 / 6</div>
+									  <img src="img/product-img/ballet2.jpg" style="width:70%" class="center">
+								  </div>
+
+								  <!-- Next and previous buttons -->
+								  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+								  <!-- Image text -->
+								  <div class="caption-container">
+									<p id="caption"></p>
+								  </div>
+
+								  <!-- Thumbnail images -->
+								  <div class="row" style="padding-left:30px">
+									<div class="column">
+									  <img class="demo cursor" src="img/product-img/ballet4.jpg" style="width:95%" onclick="currentSlide(1)" class="center">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/product-img/ballet5.jpg" style="width:95%" onclick="currentSlide(2)" class="center">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/product-img/ballet6.jpg" style="width:95%" onclick="currentSlide(3)" class="center">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/product-img/ballet7.jpg" style="width:90%" onclick="currentSlide(4)" class="center">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/product-img/ballet1.jpg" style="width:95%" onclick="currentSlide(5)" class="center">
+									</div>
+									<div class="column">
+									  <img class="demo cursor" src="img/product-img/ballet2.jpg" style="width:70%" onclick="currentSlide(6)" class="center">
+									</div>
+								  </div>
+								</div><br>
+								<p class="dance-content" style="text-align: center;"> 
+								地址: 大角咀新九龍廣場8樓809室 
 								<a class="contact-font" href="contact-us.html">地圖/Map</a><br>
 								報名請 whatsapp 68025807 
-								<a class="contact-font" href="contact-us.html">Contact us</a></p>
+								<a class="contact-font" href="contact-us.html">Contact us</a></p>		
+                            </div>
+                            <div class="col-12 col-lg-7">
+								<br><h4 style="text-align: center;">Kids Ballet Class 幼兒芭蕾課 </h4><br>
+								<p class="dance-content" style="text-align: center;"> 
+								課程專為幼童而設, 通過有趣方式教導芭蕾舞技巧, 
+								更能培養音樂感、鍛鍊儀態、訓練大小肌肉。
+								完成課程後可銜接英國皇家芭蕾舞考試課程。	<br><br>				
+								
+								Pre School 2.5-5歲 學費 $180 <br>
+								- 逢星期三 17:00-17:45<br>
+								- 逢星期六 12:15-13:00<br>
+								- 逢星期六 16:15-17:00<br><br>
+							
+								Pre Primary 5歲以上 學費 $200 <br>
+								- 逢星期六 15:30-16:15<br>
+								- 逢星期三 17:45-18:30<br><br>
+
+								優惠：轉介新生和舊生各有一次九折優惠；二人同行各有一次八五折優惠。<br></p>														
                             </div>
 						  </div>
 						  
+						  <div class="row"> 
+                            <div class="col-12 col-lg-5">
+								 <br><br><br><p align="center"><iframe width="430px" height="280px" src="https://www.youtube.com/embed/Ci2cCxxVvLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								 </p><br><br>
+								<p class="dance-content" style="text-align: center;"> 
+								地址: 大角咀新九龍廣場8樓809室 
+								<a class="contact-font" href="contact-us.html">地圖/Map</a><br>
+								報名請 whatsapp 68025807 
+								<a class="contact-font" href="contact-us.html">Contact us</a></p>	
+                            </div>
+                            <div class="col-12 col-lg-7">
+								<br><br><br><h4 style="text-align: center;">Adult Ballet Class 成人芭蕾課 </h4><br>
+								<p class="dance-content" style="text-align: center;">
+								練芭蕾的女人也許不是最美麗，但卻擋不住一種優雅、由內而外的魅力。通過芭蕾舞基本功的訓練，能夠糾正不良形體，無論站姿還是坐姿，都能使女生保持挺拔。
+								我們的成人芭蕾課歡迎任何年齡的零基礎學生來參加，一起鍛煉形體，健美身材，提升氣質。		
+								<br><br>
+								課堂時間: 逢星期一 19:30-20:45；逢星期六 13:00-14:15 <br>
+								<br>學費：單堂：$220; 八堂：$1600 / 十五堂：$2700（有效期兩個月）<br>
+								</p>								
+								
+                            </div>
+						  </div>		  
 						
 					</div>
             </div>
