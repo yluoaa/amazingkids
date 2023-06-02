@@ -1404,6 +1404,18 @@ img {
     border-radius: 0;
     background-color: #f5f7fa; }
 
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.7em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table td {
+    padding: 15px 15px;
+}
 
 /* ##### The End ##### */
 
